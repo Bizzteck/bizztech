@@ -57,6 +57,14 @@
           opacity: 1;
         }
       }
+      @keyframes pulse-border {
+        0%, 100% {
+          box-shadow: 0 0 15px 5px rgba(59, 130, 246, 0.5);
+        }
+        50% {
+          box-shadow: 0 0 25px 10px rgba(59, 130, 246, 0.7);
+        }
+      }
     </style>
   </head>
   <body class="bg-gray-900 text-white">
@@ -103,7 +111,7 @@
 
           <!-- Desktop Navigation -->
           <div class="hidden md:flex items-center space-x-8">
-            <a 
+            <a
               class="text-gray-300 hover:text-blue-500 transition-colors"
               >Home</a
             >
@@ -186,6 +194,25 @@
       <p class="text-xl md:text-2xl text-gray-300 mb-8 max-w-2xl">
         The NextGen Engineers Intercollegiate Symposium
       </p>
+
+      <!-- Cash Prize Banner -->
+      <div class="w-full max-w-xl mx-auto mb-8 relative overflow-hidden">
+        <div class="bg-gradient-to-r from-blue-600 via-purple-600 to-blue-600 rounded-lg p-1 animate-[pulse-border_2s_infinite]">
+          <div class="bg-gray-900 rounded-lg p-4 md:p-6 relative overflow-hidden">
+            <!-- Sparkle animations -->
+            <div class="absolute top-1/4 left-1/4 w-2 h-2 bg-yellow-300 rounded-full animate-ping" style="animation-duration: 2s; animation-delay: 0.5s;"></div>
+            <div class="absolute top-3/4 right-1/4 w-2 h-2 bg-yellow-300 rounded-full animate-ping" style="animation-duration: 2.5s; animation-delay: 1s;"></div>
+            
+            <h2 class="text-2xl md:text-3xl font-bold text-blue-400 mb-2">₹7,000 CASH PRIZE</h2>
+            <p class="text-sm md:text-base text-gray-300">Showcase your talent and win exciting cash rewards!</p>
+            
+            <!-- Money emoji decorations for visual appeal -->
+            <span class="absolute -left-2 top-1/2 transform -translate-y-1/2 text-xl md:text-3xl animate-bounce" style="animation-duration: 2s;">💰</span>
+            <span class="absolute -right-2 top-1/2 transform -translate-y-1/2 text-xl md:text-3xl animate-bounce" style="animation-duration: 2.5s; animation-delay: 0.5s;">💸</span>
+          </div>
+        </div>
+      </div>
+
       <!-- Register Button -->
       <a
         href="https://forms.gle/zNGcxxvq5WtRhTpQ8"
