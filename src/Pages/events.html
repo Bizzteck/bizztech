@@ -312,6 +312,37 @@
       </div>
     </div>
 
+    <!-- Card 7 - Free Fire -->
+        <div
+          class="bg-gray-800 bg-opacity-50 rounded-xl p-6 border border-gray-700"
+        >
+          <h2 class="text-2xl font-bold mb-4 text-blue-400">
+            FREE FIRE
+          </h2>
+          <p class="text-gray-300 mb-4">
+            Get ready to drop in, loot up, and battle for glory! 
+          </p>
+          <div class="flex justify-between items-center mb-4">
+            <div>
+              <p class="text-xl text-gray-400 mb-6">
+               Compete against skilled players in intense battle royale action. 
+               Form your squad, strategize, and fight for survival to claim victory. 
+               Whether you're a casual player or a pro, this is your chance to prove your skills and win exciting prizes!
+              </p>
+              <p class="text-xl text-gray-400 mb-2">🕛 Time: 2:15 PM</p>
+              <p class="text-xl text-gray-400">📍 Venue: CSBS Department</p>
+              <p class="text-xl text-gray-400">📞 For more Details, Contact: Madhan - 9344965801 </p>
+            </div>
+          </div>
+          <button
+            onclick="showModal('freefire')"
+            class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
+          >
+            Read More
+          </button>
+        </div>
+
+
     <!-- Modal Templates -->
     <!-- Presentation Modal -->
     <div
@@ -628,6 +659,73 @@
         <button
           onclick="closeModal('phantom')"
           class="mt-6 w-full bg-purple-600 text-white py-2 rounded-lg hover:bg-purple-700 transition"
+        >
+          Close
+        </button>
+      </div>
+    </div>
+    <!-- Free Fire Modal -->
+    <div
+      id="presentation-modal"
+      class="modal fixed inset-0 z-50 bg-black bg-opacity-60 items-center justify-center p-4"
+    >
+      <div
+        class="bg-gray-800 rounded-xl max-w-md w-full p-6 relative border border-gray-700"
+      >
+        <button
+          onclick="closeModal('freefire')"
+          class="absolute top-4 right-4 text-gray-400 hover:text-white"
+        >
+          <svg
+            class="w-6 h-6"
+            fill="none"
+            stroke="currentColor"
+            viewBox="0 0 24 24"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        </button>
+        <h2 class="text-2xl font-bold text-blue-400 mb-4">
+          Free Fire Tournament
+        </h2>
+        <div class="space-y-4 text-gray-300">
+          <p>Get ready to drop in, loot up, and battle for glory!</p>
+          <div>
+            <p class="font-bold">General Instruction</p>
+            <p>
+              1. Any kind of hack or cheating will lead to disqualification of the team itself.
+            </p>
+            <p>
+              2. Any kind of emote or mocking action of the team upon enemy will be lead to disqualification of the team itself.
+            </p>
+            <p>
+              3.  All players should must wear their own headphones while playing, no game sound should be on speaker, if so it should be muted. 
+            </p>
+            <p>
+              4. All players should communicate only through game microphone, No one should shout inside the gaming venue. 
+            </p>
+            <p class="font-bold mt-4">Rules and regulations :</p>
+            <p>1. For BR match 
+              All normal as BR ranked match.
+              Limited ammo </p>
+            <p>
+              2. For CS match 
+              Roof allowed 
+              Wall break allowed 
+              Objective : 7 rounds 
+              No grenade or any throwable(except gloo wall) 
+              Character skill off, unlimited ammo 
+            </p>
+          </div>
+        </div>
+        <button
+          onclick="closeModal('freefire')"
+          class="mt-6 w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700 transition"
         >
           Close
         </button>
